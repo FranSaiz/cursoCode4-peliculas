@@ -22,6 +22,7 @@ $routes->get('/Pelicula/new', 'Pelicula::create');
 $routes->get('/Pelicula/edit', 'Pelicula::create/$1'); */
 
 $routes->presenter('Pelicula');
+$routes->presenter('Categoria');
 
 // The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
 // where controller filters or CSRF protection are bypassed.
