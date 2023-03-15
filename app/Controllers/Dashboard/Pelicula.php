@@ -40,7 +40,8 @@ class Pelicula extends BaseController{
             'titulo' => $this->request->getPost('titulo'),
             'descripcion' => $this->request->getPost('descripcion')
         ]);
-        return redirect()->to('/dashboard/Pelicula');
+        
+        return redirect()->to('/dashboard/Categoria')->with('mensaje', 'Registro creado exitosamente');
     }
 
     public function edit($id) {
@@ -67,7 +68,8 @@ class Pelicula extends BaseController{
         $peliculaModel = new PeliculaModel();
         $peliculaModel->delete($id);
 
-        echo "Delete";
+        session()->setFlashData('mensaje', 'Registro eliminado');
+        return redirect()->to('/dashboard/Pelicula');
     }
  
 }

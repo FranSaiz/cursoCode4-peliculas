@@ -9,6 +9,7 @@
 <body>
     <h1>Listado</h1>
     <?php //echo $nombreVariableVista; ?>
+    <?= view('partials/_session') ?>
     <a href="/dashboard/Pelicula/new/">Crear</a>
     <table>
         <tr>

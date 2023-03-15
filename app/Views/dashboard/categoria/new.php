@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+    
+    <?= view('partials/_session') ?>
     <form action="/dashboard/Categoria/create" method="POST">
         <?= view('dashboard/categoria/_form', ['op' => 'Crear']); ?>
     </form>

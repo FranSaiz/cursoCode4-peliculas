@@ -7,6 +7,9 @@
     <title>Categorias</title>
 </head>
 <body>
+    <?= session('key') ?>
+
+    <?= view('partials/_session') ?>
     <a href="/dashboard/Categoria/new/">Crear</a>
     <table>
         <tr>

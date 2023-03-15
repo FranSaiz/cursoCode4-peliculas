@@ -7,8 +7,9 @@
     <title>Editar categoría</title>
 </head>
 <body>
-<form action="dashboard/Categoria/update/<?= $categoria['id'] ?>" method="POST">
-    <?= view('dashboard/categoria/_form', ['op' => 'Actualizar']); ?>
-</form>
+    <?= view('partials/_session') ?>
+    <form action="/dashboard/Categoria/update/<?= $categoria['id'] ?>" method="POST">
+        <?= view('/dashboard/categoria/_form', ['op' => 'Actualizar']); ?>
+    </form>
 </body>
 </html>
