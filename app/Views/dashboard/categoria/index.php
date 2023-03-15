@@ -16,12 +16,12 @@
         </tr>   
         <?php foreach($categorias as $key => $value) :?>
             <tr>
-            <td> <?= $value['id'] ?> </td>
-                <td> <?= $value['titulo'] ?> </td>
+            <td> <?= $value->id ?> </td>
+                <td> <?= $value->titulo ?> </td>
                 <td>
-                    <a href="/dashboard/Categoria/show/<?= $value['id'] ?>">Show</a>
-                    <a href="/dashboard/Categoria/edit/<?= $value['id'] ?>">Edit</a>
-                    <form action="/dashboard/Categoria/delete/<?= $value['id'] ?>" method="POST">
+                    <a href="/dashboard/Categoria/show/<?= $value->id ?>">Show</a>
+                    <a href="/dashboard/Categoria/edit/<?= $value->id ?>">Edit</a>
+                    <form action="/dashboard/Categoria/delete/<?= $value->id ?>" method="POST">
                         <button type="submit">Delete</button>
                     </form>
                 </td>

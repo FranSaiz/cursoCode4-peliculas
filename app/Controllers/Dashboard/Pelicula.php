@@ -8,10 +8,12 @@ use App\Models\PeliculaModel;
 class Pelicula extends BaseController{
 
     public function index() {
-        
-        
         $peliculaModel = new PeliculaModel();
-        //echo $peliculaModel->findAll()[0]['titulo'];
+
+        $db = \Config\Database::connect();
+        $builder = $db->table('peliculas');
+
+        //return $builder->limit(10,20)->getCompiledSelect();
 
         echo view('dashboard/pelicula/index', [
             'peliculas' => $peliculaModel->findAll()
@@ -27,10 +29,7 @@ class Pelicula extends BaseController{
     }
     public function new() {
         echo view('dashboard/pelicula/new', [
-            'pelicula' => [
-                'titulo' => '',
-                'descripcion' => ''
-            ]
+            'pelicula' => new PeliculaModel()
         ]);
     }
     public function create() {
