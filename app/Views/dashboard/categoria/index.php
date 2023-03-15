@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorias</title>
-</head>
-<body>
-    <?= session('key') ?>
+<?= $this->extend('Layouts/dashboard') ?>
+<?= $this->section('contenido') ?>
 
-    <?= view('partials/_session') ?>
-    <a href="/dashboard/Categoria/new/">Crear</a>
+<a href="/dashboard/Categoria/new/">Crear</a>
     <table>
         <tr>
             <th>
@@ -37,5 +28,5 @@
             </tr>
         <?php endforeach ?>
     </table>
-</body>
-</html>
+
+<?= $this->endSection() ?>

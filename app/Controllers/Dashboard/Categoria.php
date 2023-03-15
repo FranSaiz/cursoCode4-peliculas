@@ -16,7 +16,7 @@ class Categoria extends BaseController
         ]);
     }
     public function new() {
-        echo session()->get('key');
+        //echo session()->get('key');
 
         echo view('dashboard/categoria/new', [
             'categoria' => [
