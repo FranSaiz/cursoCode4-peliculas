@@ -987,3 +987,31 @@ in APPPATH/Views/categoria/show.php on line 10.
  8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
  9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-14 14:27:42 --> syntax error, unexpected variable "$routes"
+in APPPATH/Config/Routes.php on line 39.
+ 1 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-14 14:27:49 --> syntax error, unexpected variable "$routes"
+in APPPATH/Config/Routes.php on line 39.
+ 1 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-03-14 14:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-14 14:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-14 14:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-14 14:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-14 14:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-14 15:00:44 --> The route for "test" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+ 2 APPPATH/Controllers/Categoria.php(17): CodeIgniter\HTTP\RedirectResponse->route()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Categoria->new()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
