@@ -34,14 +34,23 @@ class Pelicula extends BaseController{
         ]);
     }
     public function create() {
-        $peliculaModel = new PeliculaModel();
-
-        $peliculaModel->insert([
-            'titulo' => $this->request->getPost('titulo'),
-            'descripcion' => $this->request->getPost('descripcion')
-        ]);
         
-        return redirect()->to('/dashboard/Categoria')->with('mensaje', 'Registro creado exitosamente');
+        if($this->validate('peliculas')) {
+            $peliculaModel = new PeliculaModel();
+
+            $peliculaModel->insert([
+                'titulo' => $this->request->getPost('titulo'),
+                'descripcion' => $this->request->getPost('descripcion')
+            ]);
+            
+            return redirect()->to('/dashboard/Pelicula')->with('mensaje', 'Registro creado exitosamente');
+        } else {
+            session()->setFlashData([
+                'validation' => $this->validator
+            ]);
+
+            return redirect()->back()->withInput();
+        }
     }
 
     public function edit($id) {
@@ -54,14 +63,22 @@ class Pelicula extends BaseController{
     }
 
     public function update($id) {
-        $peliculaModel = new PeliculaModel();
-        $peliculaModel->update($id, [
-            'titulo' => $this->request->getPost('titulo'),
-            'descripcion' => $this->request->getPost('descripcion')
-        ]);
 
-        //return redirect()->back();
-        return redirect()->to('/dashboard/Pelicula');
+        if($this->validate('peliculas')) {
+            $peliculaModel = new PeliculaModel();
+            $peliculaModel->update($id, [
+                'titulo' => $this->request->getPost('titulo'),
+                'descripcion' => $this->request->getPost('descripcion')
+            ]);        
+        } else {
+            session()->setFlashData([
+                'validation' => $this->validator
+            ]);
+
+            return redirect()->back()->withInput();
+        }
+
+        return redirect()->to('/dashboard/Pelicula')->with('mensaje', 'Pelicula actualizada');
     }
 
     public function delete($id) {
