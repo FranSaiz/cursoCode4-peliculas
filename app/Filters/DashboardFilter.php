@@ -28,7 +28,7 @@ class DashboardFilter implements FilterInterface
         if(!session()->get('usuario')) {
             return redirect()->to(route_to('usuario.login'));
         }   
-        if(ssession()->get('usuario')->tipo != 'admin') {
+        if(session()->get('usuario')->tipo != 'admin') {
             return redirect()->to(route_to('usuario.login'));
         }
     }

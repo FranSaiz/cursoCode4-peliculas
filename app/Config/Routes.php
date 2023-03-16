@@ -16,11 +16,17 @@ $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 
+$routes->group('api', ['namespace' => 'App\Controllers\Api'], function($routes) {
+    $routes->resource('pelicula');
+    $routes->resource('categoria');
+});
+
+
 $routes->group('dashboard', function($routes) {
     $routes->presenter('Pelicula', ['controller' => 'Dashboard\Pelicula']);
     $routes->presenter('Categoria', ['controller' => 'Dashboard\Categoria']/*, ['except' => ['index']]*/);
-    $routes->get('Usuario/crear', '\App\Controllers\Web\Usuario::crearUsuario');
-    $routes->get('Usuario/probar', '\App\Controllers\Web\Usuario::probarClave');
+    /* $routes->get('Usuario/crear', '\App\Controllers\Web\Usuario::crearUsuario');
+    $routes->get('Usuario/probar', '\App\Controllers\Web\Usuario::probarClave'); */
     //$routes->resource('Categoria', ['websafe' => 1]);
 });
 

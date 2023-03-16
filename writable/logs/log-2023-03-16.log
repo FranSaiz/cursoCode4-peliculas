@@ -211,3 +211,203 @@ INFO - 2023-03-16 09:02:57 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-03-16 09:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-03-16 09:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-03-16 09:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-16 09:29:14 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Api/Pelicula.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 09:29:31 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Api/Pelicula.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 09:29:58 --> Object of class App\Controllers\Api\Pelicula could not be converted to string
+in APPPATH/Controllers/Api/Pelicula.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 09:30:05 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Api/Pelicula.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 09:35:07 --> Call to a member function findAll() on null
+in APPPATH/Controllers/Api/Pelicula.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 09:36:54 --> The SimpleXML extension is required to format XML.
+in SYSTEMPATH/Format/XMLFormatter.php on line 37.
+ 1 SYSTEMPATH/Format/XMLFormatter.php(37): CodeIgniter\Format\Exceptions\FormatException::forMissingExtension()
+ 2 SYSTEMPATH/API/ResponseTrait.php(346): CodeIgniter\Format\XMLFormatter->format()
+ 3 SYSTEMPATH/API/ResponseTrait.php(99): CodeIgniter\RESTful\ResourceController->format()
+ 4 APPPATH/Controllers/Api/Pelicula.php(13): CodeIgniter\RESTful\ResourceController->respond()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-03-16 09:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-16 09:37:22 --> Call to undefined function App\Filters\ssession()
+in APPPATH/Filters/DashboardFilter.php on line 31.
+ 1 SYSTEMPATH/Filters/Filters.php(173): App\Filters\DashboardFilter->before()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-03-16 09:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-16 09:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-16 09:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-16 09:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-16 09:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-16 09:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-16 09:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-16 09:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-16 09:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-16 09:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-16 09:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-16 09:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-16 09:42:18 --> The SimpleXML extension is required to format XML.
+in SYSTEMPATH/Format/XMLFormatter.php on line 37.
+ 1 SYSTEMPATH/Format/XMLFormatter.php(37): CodeIgniter\Format\Exceptions\FormatException::forMissingExtension()
+ 2 SYSTEMPATH/API/ResponseTrait.php(346): CodeIgniter\Format\XMLFormatter->format()
+ 3 SYSTEMPATH/API/ResponseTrait.php(99): CodeIgniter\RESTful\ResourceController->format()
+ 4 APPPATH/Controllers/Api/Pelicula.php(13): CodeIgniter\RESTful\ResourceController->respond()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 09:43:29 --> The SimpleXML extension is required to format XML.
+in SYSTEMPATH/Format/XMLFormatter.php on line 37.
+ 1 SYSTEMPATH/Format/XMLFormatter.php(37): CodeIgniter\Format\Exceptions\FormatException::forMissingExtension()
+ 2 SYSTEMPATH/API/ResponseTrait.php(346): CodeIgniter\Format\XMLFormatter->format()
+ 3 SYSTEMPATH/API/ResponseTrait.php(99): CodeIgniter\RESTful\ResourceController->format()
+ 4 APPPATH/Controllers/Api/Pelicula.php(13): CodeIgniter\RESTful\ResourceController->respond()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 09:58:44 --> 4560 is not a valid HTTP return status code
+in SYSTEMPATH/HTTP/ResponseTrait.php on line 157.
+ 1 SYSTEMPATH/HTTP/ResponseTrait.php(157): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode()
+ 2 SYSTEMPATH/API/ResponseTrait.php(104): CodeIgniter\HTTP\Response->setStatusCode()
+ 3 APPPATH/Controllers/Api/Pelicula.php(16): CodeIgniter\RESTful\ResourceController->respond()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-03-16 10:20:10 --> mysqli_sql_exception: Column 'titulo' cannot be null in /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/codeigniter4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/codeigniter4/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/codeigniter4/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/codeigniter4/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/codeigniter4/app/Controllers/Api/Pelicula.php(23): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(934): App\Controllers\Api\Pelicula->create()
+#9 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /opt/lampp/htdocs/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /opt/lampp/htdocs/codeigniter4/system/Commands/Server/rewrite.php(47): require_once('...')
+#13 {main}
+CRITICAL - 2023-03-16 10:20:10 --> Column 'titulo' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/Api/Pelicula.php(23): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->create()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-03-16 10:20:52 --> mysqli_sql_exception: Column 'titulo' cannot be null in /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/codeigniter4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/codeigniter4/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/codeigniter4/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/codeigniter4/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/codeigniter4/app/Controllers/Api/Pelicula.php(23): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(934): App\Controllers\Api\Pelicula->create()
+#9 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /opt/lampp/htdocs/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /opt/lampp/htdocs/codeigniter4/system/Commands/Server/rewrite.php(47): require_once('...')
+#13 {main}
+CRITICAL - 2023-03-16 10:20:52 --> Column 'titulo' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/Api/Pelicula.php(23): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->create()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 10:24:34 --> Object of class CodeIgniter\HTTP\Response could not be converted to string
+in APPPATH/Controllers/Api/Pelicula.php on line 28.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->create()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 10:30:05 --> Declaration of App\Controllers\Api\Pelicula::update($id) must be compatible with CodeIgniter\RESTful\ResourceController::update($id = null)
+in APPPATH/Controllers/Api/Pelicula.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-03-16 10:59:03 --> mysqli_sql_exception: Unknown column 'descripcion' in 'field list' in /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/codeigniter4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/codeigniter4/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/codeigniter4/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/codeigniter4/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/codeigniter4/app/Controllers/Api/Categoria.php(23): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(934): App\Controllers\Api\Categoria->create()
+#9 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /opt/lampp/htdocs/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /opt/lampp/htdocs/codeigniter4/system/Commands/Server/rewrite.php(47): require_once('...')
+#13 {main}
+CRITICAL - 2023-03-16 10:59:03 --> Unknown column 'descripcion' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/Api/Categoria.php(23): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Categoria->create()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-16 10:59:51 --> Undefined array key "descripcion"
+in APPPATH/Controllers/Api/Categoria.php on line 36.
+ 1 APPPATH/Controllers/Api/Categoria.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Categoria->update()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
