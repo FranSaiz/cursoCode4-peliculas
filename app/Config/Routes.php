@@ -19,9 +19,16 @@ $routes->set404Override();
 $routes->group('dashboard', function($routes) {
     $routes->presenter('Pelicula', ['controller' => 'Dashboard\Pelicula']);
     $routes->presenter('Categoria', ['controller' => 'Dashboard\Categoria']/*, ['except' => ['index']]*/);
+    $routes->get('Usuario/crear', '\App\Controllers\Web\Usuario::crearUsuario');
+    $routes->get('Usuario/probar', '\App\Controllers\Web\Usuario::probarClave');
     //$routes->resource('Categoria', ['websafe' => 1]);
 });
 
+$routes->get('login', '\App\Controllers\Web\Usuario::login', ['as' => 'usuario.login']);
+$routes->post('loginPost', '\App\Controllers\Web\Usuario::loginPost', ['as' => 'usuario.loginPost']);
+$routes->get('register', '\App\Controllers\Web\Usuario::register', ['as' => 'usuario.register']);
+$routes->post('registerPost', '\App\Controllers\Web\Usuario::registerPost', ['as' => 'usuario.registerPost']);
+$routes->get('logout', '\App\Controllers\Web\Usuario::logout', ['as' => 'usuario.logout']);
 
 
 

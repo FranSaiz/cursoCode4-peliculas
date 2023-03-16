@@ -779,3 +779,163 @@ in APPPATH/Views/dashboard/pelicula/_form.php on line 2.
 13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
 14 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
 INFO - 2023-03-15 13:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-15 14:20:05 --> Class "Config\MiFiltro" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 14:20:30 --> Class "CodeIgniter\Filters\MiFiltro" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 14:25:18 --> Class "Config\MiFiltro" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 14:27:49 --> Class "Config\MiFiltro" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 14:27:49 --> Class "Config\MiFiltro" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 14:32:24 --> syntax error, unexpected token "return", expecting "]"
+in APPPATH/Filters/MiFiltro.php on line 31.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 SYSTEMPATH/Filters/Filters.php(166): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-03-15 14:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-15 14:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-15 15:17:09 --> Class "App\Controllers\Web\UsuarioModel" not found
+in APPPATH/Controllers/Web/Usuario.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Web\Usuario->crearUsuario()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 15:17:18 --> Class "App\Controllers\Web\UsuarioModel" not found
+in APPPATH/Controllers/Web/Usuario.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Web\Usuario->crearUsuario()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 15:18:37 --> Class "App\Controllers\Web\UsuarioModel" not found
+in APPPATH/Controllers/Web/Usuario.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Web\Usuario->crearUsuario()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-15 15:18:57 --> Class "App\Controllers\Web\UsuarioModel" not found
+in APPPATH/Controllers/Web/Usuario.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Web\Usuario->crearUsuario()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-03-15 15:19:17 --> mysqli_sql_exception: Unknown column 'email' in 'field list' in /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/codeigniter4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/codeigniter4/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/codeigniter4/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/codeigniter4/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/codeigniter4/app/Controllers/Web/Usuario.php(14): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(934): App\Controllers\Web\Usuario->crearUsuario()
+#9 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /opt/lampp/htdocs/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /opt/lampp/htdocs/codeigniter4/system/Commands/Server/rewrite.php(47): require_once('...')
+#13 {main}
+CRITICAL - 2023-03-15 15:19:17 --> Unknown column 'email' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/Web/Usuario.php(14): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Web\Usuario->crearUsuario()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-03-15 15:23:24 --> mysqli_sql_exception: Duplicate entry 'admin' for key 'usuario' in /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/codeigniter4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/codeigniter4/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/codeigniter4/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/codeigniter4/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/codeigniter4/app/Controllers/Web/Usuario.php(16): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(934): App\Controllers\Web\Usuario->crearUsuario()
+#9 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /opt/lampp/htdocs/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /opt/lampp/htdocs/codeigniter4/system/Commands/Server/rewrite.php(47): require_once('...')
+#13 {main}
+CRITICAL - 2023-03-15 15:23:24 --> Duplicate entry 'admin' for key 'usuario'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/Web/Usuario.php(16): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Web\Usuario->crearUsuario()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-03-15 15:23:37 --> mysqli_sql_exception: Duplicate entry 'admin@gmail.com' for key 'email' in /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/codeigniter4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/codeigniter4/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/codeigniter4/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/codeigniter4/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/codeigniter4/app/Controllers/Web/Usuario.php(16): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(934): App\Controllers\Web\Usuario->crearUsuario()
+#9 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /opt/lampp/htdocs/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /opt/lampp/htdocs/codeigniter4/system/Commands/Server/rewrite.php(47): require_once('...')
+#13 {main}
+CRITICAL - 2023-03-15 15:23:37 --> Duplicate entry 'admin@gmail.com' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/Web/Usuario.php(16): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Web\Usuario->crearUsuario()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
