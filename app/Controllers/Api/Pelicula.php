@@ -56,6 +56,7 @@ class Pelicula extends ResourceController{
         return $this->respond('ok');
 
     }
+    
 }
 
 ?>

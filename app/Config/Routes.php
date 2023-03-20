@@ -23,6 +23,11 @@ $routes->group('api', ['namespace' => 'App\Controllers\Api'], function($routes) 
 
 
 $routes->group('dashboard', function($routes) {
+    $routes->get('Pelicula/etiqueta/(:num)', 'Dashboard\Pelicula::etiquetas/$1', ['as' => 'pelicula.etiquetas']);
+    $routes->post('Pelicula/etiqueta/(:num)', 'Dashboard\Pelicula::etiquetas_post/$1', ['as' => 'pelicula.etiquetas']);
+    $routes->post('pelicula/(:num)/etiqueta/(:num)/delete', 'Dashboard\Pelicula::etiqueta_delete/$1/$2)', ['as' => 'pelicula.etiqueta_delete']);
+
+    $routes->presenter('Etiqueta', ['controller' => 'Dashboard\Etiqueta']);
     $routes->presenter('Pelicula', ['controller' => 'Dashboard\Pelicula']);
     $routes->presenter('Categoria', ['controller' => 'Dashboard\Categoria']/*, ['except' => ['index']]*/);
     /* $routes->get('Usuario/crear', '\App\Controllers\Web\Usuario::crearUsuario');
