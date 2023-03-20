@@ -27,6 +27,9 @@ $routes->group('dashboard', function($routes) {
     $routes->post('Pelicula/etiqueta/(:num)', 'Dashboard\Pelicula::etiquetas_post/$1', ['as' => 'pelicula.etiquetas']);
     $routes->post('pelicula/(:num)/etiqueta/(:num)/delete', 'Dashboard\Pelicula::etiqueta_delete/$1/$2)', ['as' => 'pelicula.etiqueta_delete']);
 
+    $routes->post('pelicula/imagen_delete/(:num)', 'Dashboard\Pelicula::borrar_imagen/$1)', ['as' => 'pelicula.borrar_imagen']);
+    $routes->get('pelicula/imagen_descargar/(:num)', 'Dashboard\Pelicula::descargar_imagen/$1)', ['as' => 'pelicula.descargar_imagen']);
+
     $routes->presenter('Etiqueta', ['controller' => 'Dashboard\Etiqueta']);
     $routes->presenter('Pelicula', ['controller' => 'Dashboard\Pelicula']);
     $routes->presenter('Categoria', ['controller' => 'Dashboard\Categoria']/*, ['except' => ['index']]*/);

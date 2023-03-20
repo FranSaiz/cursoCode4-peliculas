@@ -20,7 +20,6 @@ class Pelicula extends BaseController{
 
         //return $builder->limit(10,20)->getCompiledSelect();
 
-        $this->asignarImagen();
 
         $data = [
             'peliculas' => $peliculaModel->select('peliculas.*, categorias.titulo as categoria')->join('categorias', 'categorias.id = peliculas.categoria_id')->find()
@@ -97,7 +96,9 @@ class Pelicula extends BaseController{
                 'titulo' => $this->request->getPost('titulo'),
                 'descripcion' => $this->request->getPost('descripcion'),
                 'categoria_id' => $this->request->getPost('categoria_id')
-            ]);        
+            ]);  
+            
+            $this->asignar_imagen($id);
         } else {
             session()->setFlashData([
                 'validation' => $this->validator
@@ -116,23 +117,79 @@ class Pelicula extends BaseController{
         session()->setFlashData('mensaje', 'Registro eliminado');
         return redirect()->to('/dashboard/Pelicula');
     }
-    private function generarImagen() {
+    public function descargar_imagen($imagenId){
         $imagenModel = new ImagenModel();
 
-        $imagenModel->insert([
-            'imagen' => date('Y-m-d H:m:s'),
-            'extension' => 'Pendiente',
-            'data' => 'Pendiente'
-        ]);
+        $imagen = $imagenModel->find($imagenId);
+
+        if($imagen == null) {
+            return 'No existe la imágen';
+        }
+
+        $imageRuta = 'uploads/peliculas/' . $imagen->imagen;
+        return $this->response->download($imageRuta, null)->setFileName('imagen.png');
     }
-    private function asignarImagen() {
+    public function borrar_imagen($imagenId) {
+        $imagenModel = new ImagenModel();
         $peliculaImagenModel = new PeliculaImagenModel();
 
-        $peliculaImagenModel->insert([
-            'imagen_id' => 2,
-            'pelicula_id' => 3
-        ]);
+        
+
+        $imagen = $imagenModel->find($imagenId);
+
+        // borrar archivo
+        if($imagen == null) {
+            return 'No existe la imágen';
+        } 
+
+        $imageRuta = 'uploads/peliculas/' . $imagen->imagen;
+
+        unlink($imageRuta);
+
+        // borrar archivo
+        $peliculaImagenModel->where('imagen_id', $imagenId)->delete();
+        $imagenModel->delete($imagenId);
+
+
+        return redirect()->back()->with('mensaje', 'Imagen eliminada'); 
     }
+    private function asignar_imagen($peliculaId) {
+        if($imageFile = $this->request->getFile('imagen')) {
+            //upload
+            if($imageFile->isValid()) {
+                $validated = $this->validate([
+                    'uploaded[imagen]', 
+                    'mime_in[imagen,image/jpg,image/gif,image/png]',
+                    'max_size[imagen, 4096]' 
+                ]);
+                if($validated) {
+                    $imageNombre = $imageFile->getRandomName();
+                    $ext = $imageFile->guessExtension();
+
+                    //$imageFile->move(WRITEPATH.'uploads/peliculas', $imageNombre);
+                    $imageFile->move('../public/uploads/peliculas', $imageNombre);
+
+                    $imagenModel = new ImagenModel();
+
+                    $imagenId = $imagenModel->insert([
+                        'imagen' => $imageNombre,
+                        'extension' => $ext,
+                        'data' => 'Pendiente'
+                    ]);
+
+                    $peliculaImagenModel = new PeliculaImagenModel();
+
+                    $peliculaImagenModel->insert([
+                        'imagen_id' => $imagenId,
+                        'pelicula_id' => $peliculaId
+                    ]);
+                } 
+            }
+
+            return $this->validator->listErrors();
+        }
+    } 
+    
     public function etiquetas($id) {
         $categoriaModel = new CategoriaModel();
         $etiquetaModel = new EtiquetaModel();
