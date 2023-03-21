@@ -13,6 +13,8 @@ use App\Models\PeliculaEtiquetaModel;
 class Pelicula extends BaseController{
 
     public function index() {
+
+        
         $peliculaModel = new PeliculaModel();
 
         /* $db = \Config\Database::connect();
@@ -22,11 +24,16 @@ class Pelicula extends BaseController{
 
 
         $data = [
-            'peliculas' => $peliculaModel->select('peliculas.*, categorias.titulo as categoria')->join('categorias', 'categorias.id = peliculas.categoria_id')->find()
+            'peliculas' => $peliculaModel
+            ->select('peliculas.*, categorias.titulo as categoria')
+            ->join('categorias', 'categorias.id = peliculas.categoria_id')
+            ->paginate(10),'pager' => $peliculaModel->pager
+            //->find()            
         ];
 
         echo view('dashboard/pelicula/index', $data);
         
+
     }
     
     public function show($id) {
@@ -154,6 +161,8 @@ class Pelicula extends BaseController{
         return redirect()->back()->with('mensaje', 'Imagen eliminada'); 
     }
     private function asignar_imagen($peliculaId) {
+        helper('filesystem');
+
         if($imageFile = $this->request->getFile('imagen')) {
             //upload
             if($imageFile->isValid()) {
@@ -174,7 +183,7 @@ class Pelicula extends BaseController{
                     $imagenId = $imagenModel->insert([
                         'imagen' => $imageNombre,
                         'extension' => $ext,
-                        'data' => 'Pendiente'
+                        'data' => json_encode(get_file_info('../public/uploads/peliculas/'.$imageNombre))
                     ]);
 
                     $peliculaImagenModel = new PeliculaImagenModel();

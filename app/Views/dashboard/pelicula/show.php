@@ -15,6 +15,14 @@
                 <form action="<?= route_to('pelicula.descargar_imagen', $i->id) ?>" method="GET">
                     <button type="submit">Descargar</button>
                 </form>
+                <button class="mostrarDatos">Mostrar datos</button> 
+                <script>
+                    document.querySelectorAll(".mostrarDatos").forEach((b) => {
+                        b.onclick = function(event) {
+                            console.log(<?= $i->data ?>);
+                        }   
+                    });
+                </script>
             </li>
         <?php endforeach ?>
     </ul>
@@ -40,7 +48,7 @@
                 })
             }
             
-        });
+        });       
 
 
     </script>
