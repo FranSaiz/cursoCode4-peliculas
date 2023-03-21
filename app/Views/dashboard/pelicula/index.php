@@ -1,11 +1,16 @@
 <?= $this->extend('Layouts/dashboard') ?>
+<?= $this->section('header') ?>
+    <h1>Listado de películas</h1>
+<?= $this->endSection() ?>
 <?= $this->section('contenido') ?>
 
-    <h1>Listado</h1>
+
+    
+
     <?php //echo $nombreVariableVista; ?>
     <?= view('partials/_session') ?>
-    <a href="/dashboard/Pelicula/new/">Crear</a>
-    <table>
+    <a href="/dashboard/Pelicula/new/" class="btn btn-success btn-lg mb-4">Crear</a>
+    <table class="table table-hover">
         <tr>
             <th>
                 Id
@@ -30,11 +35,11 @@
                 <td> <?= $value->descripcion ?> </td>
                 <td> <?= $value->categoria ?> </td>
                 <td>
-                    <a href="/dashboard/Pelicula/show/<?= $value->id ?>">Show</a>
-                    <a href="/dashboard/Pelicula/edit/<?= $value->id ?>">Edit</a>
-                    <a href="<?= route_to('pelicula.etiquetas', $value->id) ?>">Tags</a>
+                    <a href="/dashboard/Pelicula/show/<?= $value->id ?>" class="btn btn-secondary btn-sm mt-2">Show</a>
+                    <a href="/dashboard/Pelicula/edit/<?= $value->id ?>" class="btn btn-primary btn-sm mt-2">Edit</a>
+                    <a href="<?= route_to('pelicula.etiquetas', $value->id) ?>" class="btn btn-primary btn-sm mt-2">Tags</a>
                     <form action="/dashboard/Pelicula/delete/<?= $value->id ?>" method="POST">
-                        <button type="submit">Delete</button>
+                        <button type="submit" class="btn btn-danger btn-sm mt-1">Delete</button>
                     </form>
                 </td>
             </tr>

@@ -17,9 +17,9 @@
                 </form>
                 <button class="mostrarDatos">Mostrar datos</button> 
                 <script>
-                    document.querySelectorAll(".mostrarDatos").forEach((b) => {
+                    var boton = document.querySelectorAll(".mostrarDatos").forEach((b) => {
                         b.onclick = function(event) {
-                            console.log(<?= $i->data ?>);
+                            console.log(<?= $i->data ?>);                            
                         }   
                     });
                 </script>

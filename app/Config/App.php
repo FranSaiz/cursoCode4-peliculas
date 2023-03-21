@@ -17,6 +17,7 @@ class App extends BaseConfig
      *
      *    http://example.com/
      */
+    //public string $baseURL = 'http://codeigniter4.test/';
     public string $baseURL = 'http://localhost:8080/';
 
     /**
