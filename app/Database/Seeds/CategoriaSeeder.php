@@ -16,7 +16,7 @@ class CategoriaSeeder extends Seeder
 
         for($i=1;$i<=20;$i++) {
             $categoriaModel->insert([
-                'titulo' => 'tests Seeder '.$i
+                'titulo' => 'Categoría seed '.$i
             ]);
         };
 

@@ -22,9 +22,9 @@ class PeliculaSeeder extends Seeder
         foreach ($categorias as $c) {
             for($i=1;$i<=5;$i++) {
                 $peliculaModel->insert([
-                    'titulo' => 'tests Seeder '.$i,
+                    'titulo' => 'Título seed '.$i,
                     'categoria_id' => $c->id, 
-                    'descripcion' => 'tests Seeder '.$i
+                    'descripcion' => "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque tempore, veritatis soluta officiis eligendi ducimus, quam tempora quibusdam ipsam earum eius facere non vero enim cum praesentium, ab nesciunt aliquam!"
                 ]);
             };
         }

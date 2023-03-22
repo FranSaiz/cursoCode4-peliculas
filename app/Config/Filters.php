@@ -41,7 +41,7 @@ class Filters extends BaseConfig
             // 'invalidchars',
         ],
         'after' => [
-            'toolbar',
+            //'toolbar',
             // 'honeypot',
             // 'secureheaders',
         ],
@@ -78,6 +78,14 @@ class Filters extends BaseConfig
             'before' => [
                 'dashboard/*',
                 'dashboard'
+            ]
+        ],
+        'toolbar' => [
+            'after' => [
+                'dashboard/*',
+                'dashboard',
+                'login',
+                'register'
             ]
         ]
     ];
