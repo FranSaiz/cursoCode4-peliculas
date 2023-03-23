@@ -139,8 +139,7 @@ class Pelicula extends BaseController{
     public function borrar_imagen($imagenId) {
         $imagenModel = new ImagenModel();
         $peliculaImagenModel = new PeliculaImagenModel();
-
-        
+                
 
         $imagen = $imagenModel->find($imagenId);
 

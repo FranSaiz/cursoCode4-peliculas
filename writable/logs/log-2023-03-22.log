@@ -1128,3 +1128,132 @@ INFO - 2023-03-22 14:10:38 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-03-22 14:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-03-22 14:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-03-22 14:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-22 14:30:45 --> Call to a member function paginate() on array
+in APPPATH/Controllers/Api/Pelicula.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->paginado_full()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-03-22 14:33:56 --> mysqli_sql_exception: Unknown column 'etiqueta.id' in 'where clause' in /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/codeigniter4/system/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/codeigniter4/system/Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /opt/lampp/htdocs/codeigniter4/system/BaseModel.php(1188): CodeIgniter\Model->countAllResults()
+#6 /opt/lampp/htdocs/codeigniter4/app/Controllers/Api/Pelicula.php(44): CodeIgniter\BaseModel->paginate()
+#7 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(934): App\Controllers\Api\Pelicula->paginado_full()
+#8 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/codeigniter4/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2023-03-22 14:33:56 --> Unknown column 'etiqueta.id' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(606): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 SYSTEMPATH/BaseModel.php(1188): CodeIgniter\Model->countAllResults()
+ 4 APPPATH/Controllers/Api/Pelicula.php(44): CodeIgniter\BaseModel->paginate()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->paginado_full()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-03-22 14:40:31 --> Too few arguments to function App\Controllers\Api\Pelicula::index_por_categoria(), 0 passed in /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Api/Pelicula.php on line 49.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->index_por_categoria()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-03-22 14:57:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`code_peliculas`.`peliculas`, CONSTRAINT `peliculas_categoria_id_foreign` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/codeigniter4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/codeigniter4/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/codeigniter4/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/codeigniter4/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/codeigniter4/app/Controllers/Api/Pelicula.php(106): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(934): App\Controllers\Api\Pelicula->create()
+#9 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /opt/lampp/htdocs/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /opt/lampp/htdocs/codeigniter4/system/Commands/Server/rewrite.php(47): require_once('...')
+#13 {main}
+CRITICAL - 2023-03-22 14:57:56 --> Cannot add or update a child row: a foreign key constraint fails (`code_peliculas`.`peliculas`, CONSTRAINT `peliculas_categoria_id_foreign` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/Api/Pelicula.php(106): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Pelicula->create()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+INFO - 2023-03-22 15:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-22 15:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-22 15:33:24 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`code_peliculas`.`etiquetas`, CONSTRAINT `etiquetas_categoria_id_foreign` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) in /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/codeigniter4/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /opt/lampp/htdocs/codeigniter4/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /opt/lampp/htdocs/codeigniter4/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/codeigniter4/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/codeigniter4/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /opt/lampp/htdocs/codeigniter4/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /opt/lampp/htdocs/codeigniter4/app/Controllers/Api/Etiqueta.php(23): CodeIgniter\Model->insert()
+#8 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(934): App\Controllers\Api\Etiqueta->create()
+#9 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /opt/lampp/htdocs/codeigniter4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /opt/lampp/htdocs/codeigniter4/system/Commands/Server/rewrite.php(47): require_once('...')
+#13 {main}
+CRITICAL - 2023-03-22 15:33:24 --> Cannot add or update a child row: a foreign key constraint fails (`code_peliculas`.`etiquetas`, CONSTRAINT `etiquetas_categoria_id_foreign` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Controllers/Api/Etiqueta.php(23): CodeIgniter\Model->insert()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Api\Etiqueta->create()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
